@@ -1,0 +1,64 @@
+:root{
+    --ColorPrincipal: #4c2f27; 
+    --ColorSecundario: #bc9286;
+    --FuentePrincipal: 'Playfair Display', serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    font-size: 16px;
+    box-sizing:border-box;
+    background-color: var(--ColorSecundario);
+    color: black; 
+}
+
+*,*::after,*::before{
+    box-sizing:inherit;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cabecera a {
+
+}
+
+.Contenedor{
+    width:114rem;
+    margin:0 auto;
+}
+
+/* BOTON BUSQUEDA */
+
+.busqueda {
+    display: flex; 
+    justify-content: center;
+}
+
+/* Aqui empieza la web */
+
+.Cabecera{
+    background-color:#27292B;
+}
+
+.Cabecera img{
+    width:20%;
+}
+.Cabecera>.Contenedor{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px 0px;
+}
+
