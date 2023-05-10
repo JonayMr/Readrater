@@ -1,13 +1,14 @@
 :root{
     --ColorPrincipal: #4c2f27; 
     --ColorSecundario: #bc9286;
-    --FuentePrincipal: 'Playfair Display', serif;
+    --FuentePrincipal: # ;
+    --FuenteSecundaria:'PT Serif', serif;
 }
 
 
 html{
     font-size: 62.5%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PT Serif', serif;
 }
 
 body{
@@ -30,35 +31,84 @@ a:hover {
     text-decoration: underline;
 }
 
-.cabecera a {
-
-}
-
 .Contenedor{
     width:114rem;
     margin:0 auto;
 }
 
-/* BOTON BUSQUEDA */
-
-.busqueda {
-    display: flex; 
-    justify-content: center;
-}
 
 /* Aqui empieza la web */
 
 .Cabecera{
-    background-color:#27292B;
+    background-color:#27292B; 
+}
+
+.Busqueda {
+    display: flex; 
+    justify-content: center;
+    flex:60%;
+    max-width: 60%;
+}
+
+.Busqueda form{
+    min-width:80%;
+}
+
+.Busqueda input{
+    width:100%; 
+    padding: 8px;
+    border-radius: 10px; 
+    margin-left: 5rem;
+}
+
+.BotonMas{
+    display: flex;
+    width: 10%; 
+    text-decoration: none;
+    margin-left: 5rem;
+    align-items:center;
 }
 
 .Cabecera img{
-    width:20%;
-}
-.Cabecera>.Contenedor{
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
-    padding: 20px 0px;
+    width:100%;
 }
 
+.Cabecera>.Contenedor{
+    display:flex;
+    padding: 20px 0px;
+    font-weight: 300;
+    align-items:center;
+}
+
+.Logo {
+    flex: 10%;
+    max-width: 10%;
+}
+
+.Navegador {
+    display:flex;
+    flex: 20%;
+    max-width: 20%;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+/* .Navegador {
+    
+} */
+
+/* Slider de contenido de reseñas */
+
+.Slider {
+    border:2px solid var(--ColorPrincipal);
+    border-radius: 10px;
+    margin-top:1rem;
+    box-shadow:2px 2px black;
+}
+
+.ImagenSlider {
+    height: 300px;
+    width: 62.5%;
+    object-fit: cover;
+}
