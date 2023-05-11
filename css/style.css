@@ -1,6 +1,6 @@
 :root{
     --ColorPrincipal: #4c2f27; 
-    --ColorSecundario: #bc9286;
+    --ColorSecundario: #F8F4F4;
     --FuentePrincipal: # ;
     --FuenteSecundaria:'PT Serif', serif;
 }
@@ -23,31 +23,28 @@ body{
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 .Contenedor{
     width:114rem;
     margin:0 auto;
 }
-
+header{
+    padding: 20px 0px;
+}
 
 /* Aqui empieza la web */
-
-.Cabecera{
-    background-color:#27292B; 
-}
 
 .Busqueda {
     display: flex; 
     justify-content: center;
     flex:60%;
     max-width: 60%;
+    margin-bottom:1rem;
 }
 
 .Busqueda form{
@@ -57,8 +54,12 @@ a:hover {
 .Busqueda input{
     width:100%; 
     padding: 8px;
+    border-color:white;
     border-radius: 10px; 
     margin-left: 5rem;
+}
+.Busqueda input:focus-visible{
+    outline-color:white;
 }
 
 .BotonMas{
@@ -70,19 +71,25 @@ a:hover {
 }
 
 .Cabecera img{
-    width:100%;
+    width: 45%;
+    align-items: center;
+    height:100%;
 }
 
 .Cabecera>.Contenedor{
     display:flex;
-    padding: 20px 0px;
     font-weight: 300;
     align-items:center;
 }
 
 .Logo {
+    display: flex;
+    justify-content: space-around;
     flex: 10%;
     max-width: 10%;
+    text-align:center;
+    margin:0 auto;
+    align-items: center;
 }
 
 .Navegador {
@@ -105,10 +112,61 @@ a:hover {
     border-radius: 10px;
     margin-top:1rem;
     box-shadow:2px 2px black;
+    display:flex;
 }
 
 .ImagenSlider {
-    height: 300px;
+    height: 100%;
     width: 62.5%;
-    object-fit: cover;
 }
+
+/* Seccion de Destacados */
+.LibrosDestacados{
+    display:flex;
+    gap:1rem;
+    text-align: center;
+}
+
+.Destacados .ContenidoLibro{
+    flex:20%;
+    min-width:20%;
+}
+.Destacados .ContenidoLibro img{
+    height: 100%; 
+}
+
+/* Seccion Libro del mes */
+
+.SeccionLibroMes {
+    margin-top: 15px;
+}
+
+.LibroMes {
+    display: flex;
+}
+
+.LibroMes img {
+    width: 80%;
+}
+ .LibroMes p {
+    display: flex;
+    flex: 70%;
+    text-align: center;
+    align-items: center;
+ }
+
+/* Seccion Generos */
+
+ .Generos {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
+ }
+
+.Generos a {
+   display: flex;
+   justify-content: center;
+   padding: 20px 0px;
+}
+ 
