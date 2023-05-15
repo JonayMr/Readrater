@@ -1,8 +1,9 @@
 :root{
-    --ColorPrincipal: #4c2f27; 
+    --ColorPrincipal: #C4C3C3; 
     --ColorSecundario: #F8F4F4;
-    --FuentePrincipal: # ;
-    --FuenteSecundaria:'PT Serif', serif;
+    --ColorTres: #112222; 
+    /* --FuentePrincipal: # ;
+    --FuenteSecundaria:'PT Serif', serif; */
 }
 
 
@@ -33,11 +34,15 @@ a:hover {
     width:114rem;
     margin:0 auto;
 }
-header{
+/* header{
     padding: 20px 0px;
-}
+} */
 
 /* Aqui empieza la web */
+
+.Cabecera {
+    background-color: var(--ColorPrincipal);
+}
 
 .Busqueda {
     display: flex; 
@@ -58,17 +63,38 @@ header{
 .material-symbols-outlined{
     line-height: initial;
 }
-.Busqueda input{
-    padding: 8px;
+.ContenedorBusqueda{
+    position:relative;
+    padding: 10px;
     border-color:white;
     border-radius: 10px; 
+    min-width:90%;
+}
+.ContenedorBusqueda span{
+    position:absolute;
+    left:20px;
+    top:25%;
+    pointer-events:none;
+}
+.ContenedorBusqueda input{
+    padding-left:50px;
 }
 .Busqueda input:focus-visible{
     outline-color:white;
 }
-
+.Busqueda button{
+    border:0px;
+}
+.Busqueda>.input-group-append{
+    height:50%;
+    margin-top:8px;
+}
+.Busqueda>.input-group-append>button{
+    border-radius:15px;
+    margin-left:-10px;
+}
 .Cabecera img{
-    width: 45%;
+    width: 100%;
     align-items: center;
     height:100%;
 }
@@ -105,6 +131,7 @@ header{
     
 } */
 
+
 /* Slider de contenido de reseñas */
 
 .Slider {
@@ -132,30 +159,44 @@ header{
   }
   
 .carousel-caption{
-    
+    background-color:rgba(128, 128, 128, 0.3);
+}
+
+.carousel-caption p{
+    font-style: italic;
 }
 
 
 
-/* Seccion de Destacados */
 
-.Destacados {
+/* Seccion Más Vistos */
+
+.MasVistos {
     margin-top: 60px;
 }
 
-.LibrosDestacados{
+.LibrosMasVistos{
     display:flex;
     gap:1rem;
     text-align: center;
     margin-top: 20px;
+    align-items: center;
 }
 
-.Destacados .ContenidoLibro{
-    flex:20%;
-    min-width:20%;
+.MasVistos img{
+    min-width: 100%;
+    max-width: 100%;
 }
-.Destacados .ContenidoLibro img{
-    height: 100%; 
+
+    /* .MasVistos .ContenidoLibro{
+        flex:20%;
+        min-width:20%;
+    }
+    .MasVistos .ContenidoLibro img{
+        min-width:100%;
+        max-width:100%;
+
+        object-fit:cover; */
 }
 
 /* Seccion Libro del mes */
