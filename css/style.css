@@ -1,6 +1,6 @@
 :root{
     --ColorPrincipal: #C4C3C3; 
-    --ColorSecundario: #F8F4F4;
+    --ColorSecundario: #595858;
     --ColorTres: #112222; 
     /* --FuentePrincipal: # ;
     --FuenteSecundaria:'PT Serif', serif; */
@@ -15,8 +15,8 @@ html{
 body{
     font-size:16px;
     box-sizing:border-box;
-    background-color: var(--ColorSecundario);
-    color: black; 
+    background-color: black;
+    color: white; 
 }
 
 *,*::after,*::before{
@@ -24,7 +24,7 @@ body{
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 a:hover {
@@ -34,6 +34,18 @@ a:hover {
     width:114rem;
     margin:0 auto;
 }
+@keyframes pop-word {
+    to {
+      transform: rotateX(0);
+    }
+  }
+  
+@keyframes show {
+    to {
+      opacity: 1;
+    }
+  }
+  
 /* header{
     padding: 20px 0px;
 } */
@@ -41,7 +53,11 @@ a:hover {
 /* Aqui empieza la web */
 
 .Cabecera {
-    background-color: var(--ColorPrincipal);
+    background-color: var(--ColorSecundario); 
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    margin-bottom: 50px;
 }
 
 .Busqueda {
@@ -122,6 +138,7 @@ a:hover {
     max-width: 20%;
     align-items: center;
     justify-content: space-around; 
+    
 }
 .Navegador span{
     padding-top:7px;
@@ -141,6 +158,9 @@ a:hover {
     background-image: url(/img/FondoSlider3.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
 }
 
 .ImagenSlider {
@@ -150,7 +170,7 @@ a:hover {
     left: 0;
     height:100%;
     width:100%;
-    padding:20px; 
+    padding:20px;
 }
 
 .carousel .carousel-item {
@@ -166,26 +186,34 @@ a:hover {
     font-style: italic;
 }
 
-
-
-
 /* Seccion Más Vistos */
 
 .MasVistos {
     margin-top: 60px;
+
 }
 
-.LibrosMasVistos{
+.MasVistos h2 {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+/* .LibrosMasVistos{
     display:flex;
     gap:1rem;
     text-align: center;
     margin-top: 20px;
     align-items: center;
-}
+} */
 
 .MasVistos img{
-    min-width: 100%;
-    max-width: 100%;
+    width: 95%;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+}
+
+.container {
+    padding: 0px;
 }
 
     /* .MasVistos .ContenidoLibro{
@@ -196,15 +224,17 @@ a:hover {
         min-width:100%;
         max-width:100%;
 
-        object-fit:cover; */
+        object-fit:cover; 
 }
-
+*/
 /* Seccion Libro del mes */
 
 .SeccionLibroMes {
-
     margin-top: 60px;
+    background-color: var(--ColorSecundario);
+    color: white;
 }
+
 
 .LibroMes {
     display: flex;
@@ -212,7 +242,10 @@ a:hover {
 }
 
 .LibroMes img {
-    width: 80%;
+    width: 50%;
+    -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
 }
 
 .LibroMes p {
@@ -222,41 +255,28 @@ a:hover {
     align-items: center;
  }
 
-/* Seccion Generos */
-
-.SeccionGeneros {
-    margin-top: 60px;
-}
-
-.Generos {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-bottom: 100px;
-    justify-items: center;
-    margin-top: 20px;   
+ .SeccionLibroMes {
+    padding: 70px 0 70px 0; 
  }
 
-.Generos a{
-   display: flex;
-   justify-content: center;
-   padding: 20px 0px;
-   height: 100%;
-   align-items: center; 
-   text-transform: uppercase;
-   text-decoration: none;
-}
-
-.Generos div {
-    margin-bottom: 40px;
-}
-
-.Circulo {
-	width: 300px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: aqua;
-    justify-content: center;
-	align-items: center;
-	text-align: center;
+ .SeccionLibroMes .TextoConAnimacion {
+    font-weight: 600; 
+    font-size: 50px;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-bottom: 40px;
+    color: white;
+    font-family: "Playfair Display", Vidaloka, serif;
+    line-height: 0.85;
+    perspective: 500px;
+    display: block;
+    text-align:center;
     }
+    
+    .SeccionLibroMes .AnimacionTexto{
+    animation: show 2s forwards, pop-word 2.5s forwards;
+    animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+    opacity: 0;
+    transform: rotateX(120deg);
+    transform-origin: 50% 100%;
+      }
