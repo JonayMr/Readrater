@@ -4,10 +4,10 @@ const observer = new IntersectionObserver(entries => {
   
       if (entry.isIntersecting) {
         square.classList.add('AnimacionTexto');
-        return; // if we added the class, exit the function
+        return; // Añade clase de animación
       }
   
-      // We're not intersecting, so remove the class!
+      // Elimina la clase de animación
       square.classList.remove('AnimacionTexto');
     });
   });
