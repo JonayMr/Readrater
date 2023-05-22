@@ -337,6 +337,12 @@ a:hover {
     transform: rotateX(120deg);
     transform-origin: 50% 100%;
       }
+.TarjetasAutores{
+    display:flex;
+    justify-content:space-between;
+    padding:60px 0px;
+    align-items:flex-start;
+}
 
 footer {
     text-align: center;
@@ -351,7 +357,7 @@ footer .enlaces {
 
 footer .enlaces, footer .redes{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 footer .redes i{
     zoom:125%;
@@ -361,13 +367,17 @@ footer .enlaces a, footer .redes a{
     color:var(--ColorSecundario);
     text-decoration: none;
 }
+footer .enlaces a:nth-of-type(2){
+    padding-right:22px;
+}
 
 footer p {
     color: var(--ColorSecundario);
     margin-bottom: 0px;
     font-size: 12px;
     padding-bottom: 3px;
-    text-align: end;
+    text-align: center;
+    margin-top: 2px;
 }
 
 
