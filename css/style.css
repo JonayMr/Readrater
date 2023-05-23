@@ -26,6 +26,7 @@ body{
 a{
     color: white;
     text-decoration: none;
+    font-family: 'Figtree', sans-serif;
 }
 a:hover {
     text-decoration: underline;
@@ -155,11 +156,18 @@ a:hover {
 
 /* Slider de contenido de reseñas */
 
+.ContenedorSlider {
+    border-radius: 20px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/img/FondoSlider3.jpg);
+}
+
 .Slider {
-    margin-top:1rem;
+    height: 100%;
     border-radius: 20px;
     overflow:hidden;
-    background-image: url(/img/FondoSlider3.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
@@ -168,17 +176,11 @@ a:hover {
 }
 
 .ImagenSlider {
-    display: absolute;
-    position: relative;
     object-fit: contain;
     top: 0;
     left: 0;
-    height:100%;
-    width:326px;
+    height:90%;
     margin-left: 410px;
-    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
     border-radius: 20px;
 }
 
@@ -194,6 +196,9 @@ a:hover {
     font-style: italic;
 }
 
+.carousel{
+    margin-top: 25px;
+}
 
 /* Sección sobre nosotros */
 
@@ -264,15 +269,19 @@ a:hover {
 
 .MasVistos img{
     width: 95%;
-    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
 }
 
 .container {
     padding: 0px;
 }
 
+.col-3 img {
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -1px #000000bf;
+    margin-top: 10px;
+    border-radius: 20px;
+}
     /* .MasVistos .ContenidoLibro{
         flex:20%;
         min-width:20%;
@@ -284,7 +293,8 @@ a:hover {
         object-fit:cover; 
 }
 */
-/* Seccion Libro del mes */
+/* 
+SECCION LIBRO MES  */
 
 .SeccionLibroMes {
     margin-top: 60px;
@@ -337,22 +347,47 @@ a:hover {
     transform: rotateX(120deg);
     transform-origin: 50% 100%;
       }
+/* 
+ESTILOS AUTORES */
 .TarjetasAutores{
     display:flex;
     justify-content:space-between;
     padding:60px 0px;
     align-items:flex-start;
 }
-
-footer {
+.TarjetasAutores .card{
+    width:25rem;
+    text-align:center;
+    height:500px;
+    
+}
+.TarjetasAutores .card .card-title{
+    font-size:21px;
+    font-weight:800;
+}
+.card-body{
+    padding-bottom:0px;
+}
+.card-body ul{
+    padding-left:25px;
+}
+ .card-body .row{
+    margin-left:-28px!important;
+}
+.card-img-top {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+}
+/* 
+ESTILOS FOOTER */
+/* footer {
     text-align: center;
-
     background-color: black;
 }
 
 footer .enlaces {
     margin-bottom: 20px;
-
 }
 
 footer .enlaces, footer .redes{
@@ -378,13 +413,41 @@ footer p {
     padding-bottom: 3px;
     text-align: center;
     margin-top: 2px;
+}   
+ */
+
+ /* ESTILOS FOOTER2 */
+
+footer{
+    background-color: var(--ColorSecundario);
+}
+
+.ContenidoFooter {
+    color: black; 
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px; 
+    padding-top: 50px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ContenidoFooter a{
+    color: black;
+}
+
+.LogoFooter img{
+    height: 100px;
+    margin-right: 40px;
+}
+
+.Contacto{
+    display: flex;
+    flex-direction: column;
 }
 
 
-.col-3 img {
-    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
-    margin-top: 10px;
-    border-radius: 20px;
+.Enlaces{
+    display: flex;
+    flex-direction: column;
 }

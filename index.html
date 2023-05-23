@@ -27,6 +27,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&display=swap" rel="stylesheet">
+    
+
     <title>ReadRater</title>
 </head>
 
@@ -66,7 +72,7 @@
 
     <main>
         <section>
-            <section class="Contenedor">
+            <section class="Contenedor ContenedorSlider">
                 <div class="Slider">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -240,30 +246,36 @@
 
     <section class="SeccionAutores Contenedor">
         <div class="TarjetasAutores">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card">
+                <img class="card-img-top" src="img/JRR-Tolkien.jpg" alt="Card image cap">
+                <div class="card-body ">
+                  <h5 class="card-title">J.R.R Tolkien</h5>
+                  <p class="card-text">Profesor, filólogo y autor de "El Señor de los Anillos". Maestro de la fantasía literaria.</p>
                   <p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
                   </p>
                   <div class="row">
                     <div class="col">
                       <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="card card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <div class="card card-body ">
+                          <p>
+                            <ul>
+                                <li>El Hobbit</li>
+                                <li>El señor de los anillos</li>
+                                <li>El Silmarillion</li>
+                          </ul>
+                        </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card">
+                <img class="card-img-top" src="img/Gabriel_Garcia_Marquez.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">Gabriel Garcia Márquez</h5>
+                  <p class="card-text">Escritor colombiano, ganador del Premio Nobel de Literatura en 1982, autor de "Cien años de soledad".</p>
                   <p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle first element</a>
                   </p>
@@ -271,15 +283,21 @@
                     <div class="col">
                       <div class="collapse multi-collapse" id="multiCollapseExample2">
                         <div class="card card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            <p>
+                                <ul>
+                                    <li>Cien años de soledad</li>
+                                    <li>Crónica de una muerte anunciada</li>
+                                    <li>El amor en los tiempos del cólera</li>
+                              </ul>
+                            </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card">
+                <img class="card-img-top" src="img/John_Green.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -289,8 +307,8 @@
                   <div class="row">
                     <div class="col">
                       <div class="collapse multi-collapse" id="multiCollapseExample3">
-                        <div class="card card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <div class="card card-body ">
+                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
                         </div>
                       </div>
                     </div>
@@ -301,21 +319,37 @@
     </section>
     </main>
     <footer>
-    <div class="Contenedor">
-        <div class="enlaces">
-            <a href="">Politica de privacidad</a>
-            <a href="">Términos de uso</a>
-            <a href="">Política de cookies</a>
+        <div class="ContenidoFooter Contenedor">
+
+            <div class="LogoFooter">
+                <img src="img/RRlogo.png">
+            </div>
+        
+            <div class="Contacto">
+                <h2>Contacto</h2>
+                <a href="">readrater@gmail.com</a>
+                <a href="">606576534</a>
+            </div>
+            
+            <div class="Redes">
+                <h2>Síguenos<h2>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-reddit"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="Enlaces">
+                <h2>Textos Legales</h2>
+                <a href="">Politica de privacidad</a>
+                <a href="">Términos de uso</a>
+                <a href="">Política de cookies</a>
+            </div>
         </div>
-        <div class="redes">
-        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-reddit"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <div class="Contenedor">
+        <p>Derechos reservados © 2023</p>
         </div>
-            <p>Derechos reservados © 2023</p>
-    </div>
     </footer>
 
     <script src="js/script.js"></script>
