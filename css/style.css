@@ -46,6 +46,25 @@ a:hover {
       opacity: 1;
     }
   }
+
+
+  @keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-9px) }
+    35% { transform: translateY(-9px) rotate(17deg) }
+    55% { transform: translateY(-9px) rotate(-17deg) }
+    65% { transform: translateY(-9px) rotate(17deg) }
+    75% { transform: translateY(-9px) rotate(-17deg) }
+    100% { transform: translateY(0) rotate(0) }
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(45deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-45deg); }
+    100% { transform: rotate(0deg); }
+  }
   
 /* header{
     padding: 20px 0px;
@@ -147,6 +166,12 @@ a:hover {
 
 .Navegador span{
     padding-top:7px;
+}
+
+
+.Navegador .Campana:hover{
+    /* animation: jump-shaking 0.83s; */
+    animation: tilt-shaking 0.83s;
 }
 
 /* .Navegador {
@@ -308,8 +333,20 @@ SECCION LIBRO MES  */
     margin-top: 20px;
 }
 
+.LibroMesTexto{
+    width: 100%;
+}
+
+.LibroMesTexto h3 {
+
+    margin-bottom: 45px;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
 .LibroMes img {
-    width: 50%;
+    width: 60%;
     -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
@@ -317,11 +354,15 @@ SECCION LIBRO MES  */
     border-radius: 20px;
 }
 
+.LibroMesIMG {
+    text-align: center;
+}
+
 .LibroMes p {
     display: flex;
     flex: 70%;
-    text-align: center;
-    align-items: center;
+    width: 88.8%;
+
  }
 
  .SeccionLibroMes {
@@ -357,7 +398,8 @@ ESTILOS AUTORES */
 }
 .TarjetasAutores .card{
     width:25rem;
-    text-align:center; 
+    text-align:center;
+    margin: 0 auto;
 }
 .card .btn{
     width:100%;
@@ -430,6 +472,9 @@ footer p {
 
 footer{
     background-color: var(--ColorSecundario);
+    font-family: 'Figtree', sans-serif;
+    margin-top:50px;
+    clear:both;
 }
 
 footer p {
@@ -465,6 +510,7 @@ footer p {
 .Enlaces{
     display: flex;
     flex-direction: column;
+    font-size: 10px;
 }
 
 /* POLITICAS DE PRIVACIDAD */
@@ -488,4 +534,229 @@ footer p {
 
 .ParrafoPrivInferior{
     margin-bottom: 30px;
+}
+
+/* HTML DE LOGIN*/
+
+.limiter{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login100{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.wrap-login100{
+    width: 500px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.75);
+}
+
+.login100-form{
+    width: 100%;
+    position: relative;
+}
+
+.p-r-55{
+    padding-right: 55px;
+}
+
+.p-l-55{
+    padding-left: 55px;
+}
+
+.p-t-178{
+    padding-top: 178px;
+}
+
+.login100-form-title{
+    font-family: 'Figtree', sans-serif ;
+    font-size: 24px;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 39px;
+}
+
+.validate-input{
+    position: relative;
+}
+
+.wrap-input100{
+    width: 100%;
+    background-color: white;
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+}
+
+.m-b-16{
+    margin-bottom: 16px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.p-b-23{
+    padding-bottom: 23px;
+}
+
+.p-t-13{
+    padding-top: 13px;
+}
+
+.text-right{
+    text-align: right!important;
+}
+
+.input100{
+    font-family: 'Figtree', sans-serif ;
+    font-size: 15px;
+    color: black;
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: #ebebeb;
+    border-radius: 27px;
+    padding: 0 35px;
+    border: none;
+}
+
+.focus-input100{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 31px;
+    background-color: #ebebeb;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.input{
+    outline: none;
+    border: none;
+}
+
+.txt1{
+    font-family: 'Figtree', sans-serif ;
+    font-size: 15px;
+    color: #999;
+    line-height: 1.4;
+}
+
+.txt2{
+    font-family: 'Figtree', sans-serif ;
+    font-size: 15px;
+    color: var(--ColorSecundario);
+    line-height: 1.4;
+}
+
+.container-login100-form-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login100-form-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    font-family: 'Figtree', sans-serif ;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: all .4s;
+}
+
+button {
+    outline: none!important;
+    border: none;
+    background: 0 0;
+}
+
+.flex-col-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-b-40{
+    padding-bottom: 40px;
+}
+
+.p-t-170{
+    padding-top: 170px;
+}
+
+.p-b-9{
+    padding-bottom: 9px;
+}
+
+.txt3{
+    font-family: 'Figtree', sans-serif ;
+    font-size: 15px;
+    color: var(--ColorSecundario);
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.ContenidoAutor{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.ContenidoAutor img{
+    height:500px;
+}
+.textoContenidoAutor h2{
+    text-align:center;
+    font-size:24px;
+    font-weight:800;
+}
+.obras{
+    margin-top:20px;
+    width:68%;
+    float:right;
+}
+.obras .card{
+    border:0px;
+}
+.obras .card-header{
+    border-bottom:0px;
+    justify-content:flex-end
 }
