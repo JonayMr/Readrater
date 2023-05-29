@@ -1,3 +1,8 @@
+
+
+
+//Animación para el texto de Libro Del Mes
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const square = entry.target.querySelector('.TextoConAnimacion');
@@ -13,3 +18,32 @@ const observer = new IntersectionObserver(entries => {
   });
   
   observer.observe(document.querySelector('.SeccionLibroMes'));
+
+
+
+
+// Script para mantener la animación en la campana
+// al quitar el ratón de encima
+  
+var mantenerCampana = document.querySelectorAll('.Campana');
+
+mantenerCampana.forEach(function(item) {
+  var animationClass = 'tilt-shaking';
+  var isAnimating = false;
+
+  item.addEventListener('mouseover', function() {
+    if (!isAnimating) {
+      item.classList.add(animationClass);
+      isAnimating = true;
+
+      item.addEventListener('animationend', animationEndHandler);
+    }
+  });
+
+  function animationEndHandler() {
+    item.classList.remove(animationClass);
+    isAnimating = false;
+
+    item.removeEventListener('animationend', animationEndHandler);
+  }
+});
