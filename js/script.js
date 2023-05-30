@@ -1,27 +1,3 @@
-
-
-
-//Animación para el texto de Libro Del Mes
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const square = entry.target.querySelector('.TextoConAnimacion');
-  
-      if (entry.isIntersecting) {
-        square.classList.add('AnimacionTexto');
-        return; // Añade clase de animación
-      }
-  
-      // Elimina la clase de animación
-      square.classList.remove('AnimacionTexto');
-    });
-  });
-  
-  observer.observe(document.querySelector('.SeccionLibroMes'));
-
-
-
-
 // Script para mantener la animación en la campana
 // al quitar el ratón de encima
   
@@ -47,3 +23,27 @@ mantenerCampana.forEach(function(item) {
     item.removeEventListener('animationend', animationEndHandler);
   }
 });
+
+
+
+//Animación para el texto de Libro Del Mes
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.TextoConAnimacion');
+  
+      if (entry.isIntersecting) {
+        square.classList.add('AnimacionTexto');
+        return; // Añade clase de animación
+      }
+  
+      // Elimina la clase de animación
+      square.classList.remove('AnimacionTexto');
+    });
+  });
+  
+  observer.observe(document.querySelector('.SeccionLibroMes'));
+
+
+
+
