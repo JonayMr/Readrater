@@ -62,11 +62,19 @@
             <nav class="Navegador">
                 <a href="login.html">Login</a>
                 <a href="registro.html">Regístrate</a>
-                <a href="#">
-                    <span class="material-symbols-outlined Campana">
-                        notifications
-                    </span>
-                </a>
+                <div class="dropdown">
+                    <a class="BotonCampana " href="#">
+                        <span class="material-symbols-outlined Campana dropbtn">
+                            notifications
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </a>
+                </div>
+
             </nav>
         </div>
     </header>
@@ -124,30 +132,28 @@
 
             <section class="Sobrenosotros Contenedor">
                 <h2> SOBRE NOSOTROS </H2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla nunc.
-                    Praesent justo lectus, molestie vitae dapibus at, hendrerit nec lorem. Integer
-                    consequat egestas. </p>
+                <p class="sn"> Compartimos nuestra pasión por la lectura creándo una <b>comunidad lectora</b> que genere
+                    <b>análisis objetivos</b> y opiniones informadas ayudándote a
+                    descubrir y <b>elegir tu próxima lectura.</b>
+                </p>
                 <div class="Valores">
                     <div>
                         <i class="fa-solid fa-heart"></i>
                         <h2> OBJETIVO </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla nunc.
-                            Praesent justo lectus, molestie vitae dapibus at, hendrerit nec lorem. Integer
-                            consequat egestas.</p>
+                        <p> Brindamos a los lectores críticas de otros usuarios para ayudarles a
+                            descubrir nuevas lecturas y tomar decisiones informadas sobre qué libros elegir.</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-book"></i>
                         <h2> CULTURA</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla nunc.
-                            Praesent justo lectus, molestie vitae dapibus at, hendrerit nec lorem. Integer
-                            consequat egestas.</p>
+                        <p> Promovemos la apreciación literaria fomentando el diálogo intelectual mediante análisis
+                            reflexivos y recomendaciones literarias</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-user"></i>
                         <h2> COMUNIDAD </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla nunc.
-                            Praesent justo lectus, molestie vitae dapibus at, hendrerit nec lorem. Integer
-                            consequat egestas.</p>
+                        <p>Creamos comunidad conectando a amantes de la lectura, facilitando intercambios, discusiones y
+                            el descubrimiento colectivo de nuevas obras.</p>
                     </div>
                 </div>
             </section>
@@ -227,43 +233,6 @@
                 </div>
             </section>
 
-            <!-- <section class="SeccionGeneros Contenedor">
-                <h2>Géneros</h2>
-                <p> Descubre nuevos libros en nuestras secciones. <p> 
-                <div class="Generos">
-                    <div class="Circulo">
-                        <a href="">
-                            <p>acción</p>
-                        </a>
-                    </div>
-                    <div class="Circulo">
-                        <a href="">
-                            <p>clásicos</p>
-                        </a>
-                    </div>
-                    <div class="Circulo">
-                        <a href="">
-                            <p>novela</p>
-                        </a>
-                    </div>
-                    <div class="Circulo">
-                        <a href="">
-                            <p>thriller</p>
-                        </a>
-                    </div>
-                    <div class="Circulo">
-                        <a href="">
-                            <p>romance</p>
-                        </a>
-                    </div>
-                    <div class="Circulo">
-                        <a href="">
-                            <p>drama</p>
-                        </a>
-                    </div>
-                </div> -->
-
-            <!-- </section> -->
 
             <section class="SeccionAutores Contenedor">
                 <div class="TarjetasAutores">
@@ -279,7 +248,7 @@
                                     </div>
                                     <p>
                                         <a class="btn btn-primary" href="fichas/fichatolkien.html"
-                                            role="button">Ficha</a>
+                                            role="button">IR</a>
                                     </p>
                                 </div>
                             </div>
@@ -292,7 +261,8 @@
                                             en 1982, autor de "Cien años de soledad".</p>
                                     </div>
                                     <p>
-                                        <a class="btn btn-primary" href="#" role="button">Ficha</a>
+                                        <a class="btn btn-primary" href="fichas/fichagabrielgarciamarquez.html"
+                                            role="button">IR</a>
                                     </p>
                                 </div>
                             </div>
@@ -305,7 +275,8 @@
                                             estrella" y "Buscando a Alaska". Narrador de historias emotivas.</p>
                                     </div>
                                     <p>
-                                        <a class="btn btn-primary" href="#" role="button">Ficha</a>
+                                        <a class="btn btn-primary" href="fichas/fichajohngreen.html"
+                                            role="button">IR</a>
                                     </p>
                                 </div>
                             </div>
@@ -319,7 +290,9 @@
         <div class="ContenidoFooter Contenedor">
 
             <div class="LogoFooter">
-                <img src="img/RRlogo.png">
+                <a href="index.html">
+                    <img src="/img/RRlogo.png">
+                </a>
             </div>
 
             <div class="Contacto">
