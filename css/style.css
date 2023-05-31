@@ -144,6 +144,52 @@ a:hover {
     line-height: initial;
 }
 
+/* FORMULARIO PARA SUBIR LIBROS */
+
+.SeccionFormulario{
+    margin-top: 330px;
+}
+
+.FormContainer {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 81px -27px rgba(0, 0, 0, 0.75);
+}
+
+.FormLibros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.FormLibrosTitle{
+    margin-bottom: 20px;
+}
+
+.FormLibrosReview{   
+}
+
+.FormLibrosTitle, .FormLibrosReview{
+    width: 600px;
+    border-radius: 20px;
+    padding-left: 11px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.FormLibrosTitle::placeholder, .FormLibrosReview::placeholder {
+    padding-left: 10px;
+}
+
+.FormLibrosReview::placeholder{
+    padding-top: 5px;
+}
+
+
+/**/
 .ContenedorBusqueda {
     position: relative;
     padding: 10px;
@@ -938,21 +984,44 @@ button {
     opacity: 0;
     animation: display 10s infinite;
     height: 400px;
+    
+}
+.pic-ctn>div{
+    position: absolute;
+    margin:0 auto;
+    padding-left:70px;
+    opacity: 0;
+    animation: display 20s infinite;
+    height: 400px;
+}
+.pic-ctn>div:nth-child(2) {
+    animation-delay: 5s;
 }
 
-img:nth-child(2) {
+.pic-ctn>div:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.pic-ctn>div:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.pic-ctn>div:nth-child(5) {
+    animation-delay: 20s;
+}
+.pic-ctn>img:nth-child(2) {
     animation-delay: 2s;
 }
 
-img:nth-child(3) {
+.pic-ctn>img:nth-child(3) {
     animation-delay: 4s;
 }
 
-img:nth-child(4) {
+.pic-ctn>img:nth-child(4) {
     animation-delay: 6s;
 }
 
-img:nth-child(5) {
+.pic-ctn>img:nth-child(5) {
     animation-delay: 8s;
 }
 
