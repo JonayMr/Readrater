@@ -38,7 +38,7 @@
     <body>
         <header class="Cabecera">
             <div class="Contenedor">
-                <a class="Logo" href="../index.html">
+                <a class="Logo" href="index.html">
                     <img src="/img/RRlogo.png">
                 </a>
                 <!-- Barra de busqueda -->
@@ -51,20 +51,30 @@
                             aria-describedby="basic-addon2">
                     </div>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button"><span class="material-symbols-outlined">
+                        <a href="formularioInput.html">
+                            <button class="btn btn-outline-secondary" type="button"><span class="material-symbols-outlined">
                                 add
                             </span></button>
+                        </a>
                     </div>
     
                 </div>
                 <nav class="Navegador">
-                    <a href="#">Login</a>
-                    <a href="#">Regístrate</a>
-                    <a href="#">
-                        <span class="material-symbols-outlined Campana">
-                            notifications
-                        </span>
-                    </a>
+                    <a href="login.html">Login</a>
+                    <a href="registro.html">Regístrate</a>
+                    <div class="dropdown">
+                        <a class="BotonCampana " href="#">
+                            <span class="material-symbols-outlined Campana dropbtn">
+                                notifications
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </a>
+                    </div>
+    
                 </nav>
             </div>
         </header>
@@ -85,7 +95,7 @@
                         La prosa de Tolkien es rica y descriptiva, lo que puede resultar abrumador para algunos lectores, especialmente aquellos que no están acostumbrados a la literatura fantástica. Sin embargo, aquellos que se sumerjan en su estilo encontrarán una narración detallada que evoca imágenes vívidas y emociones intensas. Tolkien también muestra una maestría en la creación de escenas de acción y batallas épicas, que mantienen a los lectores al borde de sus asientos.</p>
                 </div>
             </div>
-            <h3>Obras más conocidas</h3>
+            <h3>Comentarios</h3>
             <div class="pic-ctn comentariosreseña">
                 <div class="comentario pic">
                     <h3 class="usuario" >Perico los Palotes</h3>

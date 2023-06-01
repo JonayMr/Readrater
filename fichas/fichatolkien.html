@@ -38,7 +38,7 @@
     <body>
         <header class="Cabecera">
             <div class="Contenedor">
-                <a class="Logo" href="../index.html">
+                <a class="Logo" href="index.html">
                     <img src="/img/RRlogo.png">
                 </a>
                 <!-- Barra de busqueda -->
@@ -51,20 +51,30 @@
                             aria-describedby="basic-addon2">
                     </div>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button"><span class="material-symbols-outlined">
+                        <a href="formularioInput.html">
+                            <button class="btn btn-outline-secondary" type="button"><span class="material-symbols-outlined">
                                 add
                             </span></button>
+                        </a>
                     </div>
     
                 </div>
                 <nav class="Navegador">
-                    <a href="#">Login</a>
-                    <a href="#">Regístrate</a>
-                    <a href="#">
-                        <span class="material-symbols-outlined Campana">
-                            notifications
-                        </span>
-                    </a>
+                    <a href="login.html">Login</a>
+                    <a href="registro.html">Regístrate</a>
+                    <div class="dropdown">
+                        <a class="BotonCampana " href="#">
+                            <span class="material-symbols-outlined Campana dropbtn">
+                                notifications
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </a>
+                    </div>
+    
                 </nav>
             </div>
         </header>
