@@ -994,6 +994,9 @@ button {
     animation: display 20s infinite;
     height: 400px;
 }
+.comentario{
+    min-width:900px;
+}
 .pic-ctn>div:nth-child(2) {
     animation-delay: 5s;
 }
