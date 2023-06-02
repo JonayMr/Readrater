@@ -46,9 +46,14 @@
             <textarea class="FormLibrosReview" name="reseña_libro" rows="5" cols="20" placeholder="Reseña del libro"></textarea>
         </form>
     </div>
+    <div id="drop-area">
+        <form class="my-form">
+          <p>Sube la portada del libro</p>
+          <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label class="button" for="fileElem">Elegir imagen</label>
+        </form>
+    </div>      
   </section>
-
-
     <script src="https://kit.fontawesome.com/20551a4daf.js" crossorigin="anonymous"></script>
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
