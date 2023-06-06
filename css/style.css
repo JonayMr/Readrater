@@ -37,7 +37,7 @@ a:hover {
 }
 
 .Contenedor {
-    width: 114rem;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -322,14 +322,6 @@ a:hover {
     align-items: center;
 }
 
-.Navegador {
-    display: flex;
-    flex: 20%;
-    max-width: 20%;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .Navegador a {
     color: black;
 }
@@ -337,13 +329,17 @@ a:hover {
 .Navegador span {
     padding-top: 7px;
 }
-
+.nav-link{
+    padding:1.5rem 2rem;
+}
 
 .Navegador .Campana:hover {
     /* animation: jump-shaking 0.83s; */
     animation: tilt-shaking 0.83s
 }
-
+.dropdown{
+    margin-right:25px;
+}
 .tilt-shaking {
     animation-name: tilt-shaking;
     animation-duration: 0.5s;
@@ -428,7 +424,7 @@ a:hover {
     top: 0;
     left: 0;
     height: 90%;
-    margin-left: 410px;
+    margin-left: 35%;
     border-radius: 20px;
 }
 
@@ -1134,4 +1130,32 @@ h3 {
     flex-direction: row;
     margin-top: 30px;
     flex: 50%;
+}
+  
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .navbar-toggler-icon{
+        background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+    }
+    .BotonCampana{
+        margin:0 auto;
+        padding:1.5rem 2rem;
+    }
+    .Contenedor{
+        width:90%;
+    }
+    .dropdown{
+        float:none;
+    }
+    .Busqueda{
+        flex-wrap:nowrap;
+    }
+    .ImagenSlider{
+        margin-left:10.5%;
+    }
+    .Valores{
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-columns:1fr;
+    }
 }
