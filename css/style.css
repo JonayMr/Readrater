@@ -329,17 +329,20 @@ a:hover {
 .Navegador span {
     padding-top: 7px;
 }
-.nav-link{
-    padding:1.5rem 2rem;
+
+.nav-link {
+    padding: 1.5rem 2rem;
 }
 
 .Navegador .Campana:hover {
     /* animation: jump-shaking 0.83s; */
     animation: tilt-shaking 0.83s
 }
-.dropdown{
-    margin-right:25px;
+
+.dropdown {
+    margin-right: 25px;
 }
+
 .tilt-shaking {
     animation-name: tilt-shaking;
     animation-duration: 0.5s;
@@ -424,13 +427,13 @@ a:hover {
     top: 0;
     left: 0;
     height: 90%;
-    margin-left: 35%;
     border-radius: 20px;
 }
 
 .carousel .carousel-item {
     height: 500px;
     text-shadow: 1px 1px 1px black;
+    text-align: center;
 }
 
 .carousel-caption {
@@ -571,7 +574,7 @@ SECCION LIBRO MES  */
 }
 
 .LibroMesTexto h3 {
-    text-align:left;
+    text-align: left;
     margin-bottom: 45px;
     font-weight: 800;
     font-size: 32px;
@@ -1131,31 +1134,63 @@ h3 {
     margin-top: 30px;
     flex: 50%;
 }
-  
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-    .navbar-toggler-icon{
-        background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
     }
-    .BotonCampana{
-        margin:0 auto;
-        padding:1.5rem 2rem;
+
+    .BotonCampana {
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
     }
-    .Contenedor{
-        width:90%;
+
+    .Contenedor {
+        width: 90%;
     }
-    .dropdown{
-        float:none;
+
+    .dropdown {
+        float: none;
     }
-    .Busqueda{
-        flex-wrap:nowrap;
+
+    .Busqueda {
+        flex-wrap: nowrap;
     }
-    .ImagenSlider{
-        margin-left:10.5%;
+
+    .ContenedorSlider {
+        background-image: none;
+        background-color: var(--ColorSecundario);
+        width: 100%;
+        border-radius: 0px;
     }
-    .Valores{
-        grid-template-rows:1fr 1fr 1fr;
-        grid-template-columns:1fr;
+
+    .Slider {
+        box-shadow: none;
+
+    }
+
+    .ImagenSlider {
+        -webkit-box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.75);
+    }
+
+    .Valores {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar .dropdown-menu {
+        display: block;
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 }
