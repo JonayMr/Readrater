@@ -512,20 +512,11 @@ a:hover {
 
 }
 
-/* .MasVistos h2 {
-    padding-left: 15px;
-    padding-top: 5px;
-} */
-
-
-
-/* .LibrosMasVistos{
-    display:flex;
-    gap:1rem;
+.MasVistos h2{
+    font-weight: 800;
+    font-size: 24px;
     text-align: center;
-    margin-top: 20px;
-    align-items: center;
-} */
+}
 
 .MasVistos img {
     width: 95%;
@@ -582,7 +573,7 @@ SECCION LIBRO MES  */
 }
 
 .LibroMes img {
-    width: 60%;
+    width: 70%;
     -webkit-box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.75);
@@ -1136,6 +1127,26 @@ h3 {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1140px) {
+    .SeccionLibroMes div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ParrafoSobreNosotros{
+        margin-bottom:45px;
+    }
+    
+    .LibroMesTexto h3{
+       text-align: center;
+    }
+
+    .LibroMesTexto p{
+        text-align: justify;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
 
 @media (max-width: 768px) {
     .navbar-toggler-icon {
@@ -1168,7 +1179,6 @@ h3 {
 
     .Slider {
         box-shadow: none;
-
     }
 
     .ImagenSlider {
@@ -1180,17 +1190,70 @@ h3 {
     .Valores {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        width:90%!important;
+        margin:0 auto;
+    }
+    .Sobrenosotros{
+        width:100%!important;
     }
 
-    .navbar .dropdown-menu {
-        display: block;
-        position: static;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
+    .SeccionLibroMes div{
+        display: flex;
+        flex-direction: column;
     }
+
+    .ParrafoSobreNosotros{
+        margin-bottom:45px;
+    }
+    
+    .LibroMesTexto h3{
+       text-align: center;
+    }
+
+    .LibroMesTexto p{
+        text-align: justify;
+        margin: 0 auto;
+    }
+    .collapse.show{
+    position: absolute;
+    margin-top: 200px;
+    left:-70%;
+    z-index: 2;
+    background-color: var(--ColorSecundario);
+    border-radius: 0 0 20px 20px;
+    -webkit-box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.83);
+    box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.83);
+    }
+    .collapsing{
+        transition:height 0.00001s ease!important;
+    }
+
+    .row{
+       gap: 20px;
+    }
+    .MasVistos{
+        display: none;
+    }
+
+    .container-login100 {
+        background: none;
+    }
+
+    .ContenidoFooter{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .LogoFooter img{
+        margin-right:0 !important;
+    }
+   footer p{
+    text-align: center;
+   }
+
+   
 }
