@@ -1161,6 +1161,9 @@ h3 {
     .Contenedor {
         width: 90%;
     }
+    .Cabecera{
+        margin-bottom:5px
+    }
 
     .dropdown {
         float: none;
@@ -1203,7 +1206,7 @@ h3 {
     }
 
     .ParrafoSobreNosotros{
-        margin-bottom:45px;
+        margin-bottom:40px;
     }
     
     .LibroMesTexto h3{
@@ -1253,6 +1256,13 @@ h3 {
     }
    footer p{
     text-align: center;
+   }
+   .Sobrenosotros{
+    margin-top:40px;
+    margin-bottom: 40px;
+   }
+   .ParrafoSobreNosotros p {
+    font-size: 15px;
    }
 
    
