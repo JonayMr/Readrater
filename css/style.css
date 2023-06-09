@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    height:100%;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
     background-color: var(--ColorPrincipal);
     color: black;
     font-family: 'PT Serif', serif;
+    height:100%;
 }
 
 *,
@@ -147,10 +149,10 @@ a:hover {
 /* FORMULARIO PARA SUBIR LIBROS */
 
 .SeccionFormulario {
-    margin-top: 330px;
-    display: flex;
+    height:100%;
+    display:flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .FormContainer {
@@ -512,7 +514,7 @@ a:hover {
 
 }
 
-.MasVistos h2{
+.MasVistos h2 {
     font-weight: 800;
     font-size: 24px;
     text-align: center;
@@ -533,18 +535,6 @@ a:hover {
     margin-top: 10px;
     border-radius: 20px;
 }
-
-/* .MasVistos .ContenidoLibro{
-        flex:20%;
-        min-width:20%;
-    }
-    .MasVistos .ContenidoLibro img{
-        min-width:100%;
-        max-width:100%;
-
-        object-fit:cover; 
-}
-*/
 /* 
 SECCION LIBRO MES  */
 
@@ -1130,28 +1120,78 @@ h3 {
 
 /* TABLET */
 @media (max-width: 1140px) {
-    .SeccionLibroMes div{
+    body{
+        height:100%;
+    }
+    .Contenedor {
+        width: 80%;
+    }
+
+    .Busqueda {
+        flex-wrap: nowrap;
+    }
+
+    .carousel-caption p {
+        font-size: 19px;
+    }
+
+    .MasVistos .carousel .carousel-item {
+        height: initial;
+    }
+
+    .SeccionLibroMes div {
         display: flex;
         flex-direction: column;
     }
 
-    .ParrafoSobreNosotros{
-        margin-bottom:45px;
-    }
-    
-    .LibroMesTexto h3{
-       text-align: center;
+    .ParrafoSobreNosotros {
+        margin-bottom: 45px;
     }
 
-    .LibroMesTexto p{
+    .Valores div {
+        height: initial;
+    }
+
+    .LibroMesTexto h3 {
+        text-align: center;
+    }
+
+    .LibroMesTexto p {
         text-align: justify;
         margin: 0 auto;
         width: 100%;
+        font-size: 17px
     }
+
+    .TarjetasAutores .row {
+        gap: 40px;
+    }
+
+    .LibroMes img {
+        width: 50%;
+    }
+
+    .ContenidoAutor {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .ContenidoAutor img {
+        margin-top: 40px;
+    }
+
+    .mainficha h3 {
+        margin-bottom: 40px;
+    }
+    
 }
 
 /* MOVIL  */
 @media (max-width: 768px) {
+    body{
+        height:100%;
+    }
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
     }
@@ -1164,8 +1204,9 @@ h3 {
     .Contenedor {
         width: 90%;
     }
-    .Cabecera{
-        margin-bottom:5px
+
+    .Cabecera {
+        margin-bottom: 5px
     }
 
     .dropdown {
@@ -1188,57 +1229,65 @@ h3 {
     }
 
     .ImagenSlider {
-        -webkit-box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.75);
-        box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 6px 16px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 6px 16px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 6px 16px -10px rgba(0, 0, 0, 0.75);
     }
 
     .Valores {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        width:90%!important;
-        margin:0 auto;
-    }
-    .Sobrenosotros{
-        width:100%!important;
+        width: 90% !important;
+        margin: 0 auto;
     }
 
-    .SeccionLibroMes div{
+    .Sobrenosotros {
+        width: 100% !important;
+    }
+
+    .SeccionLibroMes div {
         display: flex;
         flex-direction: column;
     }
 
-    .ParrafoSobreNosotros{
-        margin-bottom:40px;
-    }
-    
-    .LibroMesTexto h3{
-       text-align: center;
+    .ParrafoSobreNosotros {
+        margin-bottom: 40px;
     }
 
-    .LibroMesTexto p{
+    .LibroMesTexto h3 {
+        text-align: center;
+    }
+
+    .LibroMes img {
+        width: 50%;
+    }
+
+    .LibroMesTexto p {
         text-align: justify;
         margin: 0 auto;
     }
-    .collapse.show{
-    position: absolute;
-    margin-top: 200px;
-    left:-70%;
-    z-index: 2;
-    background-color: var(--ColorSecundario);
-    border-radius: 0 0 20px 20px;
-    -webkit-box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.83);
-    -moz-box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.83);
-    box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.83);
-    }
-    .collapsing{
-        transition:height 0.00001s ease!important;
+
+    .collapse.show {
+        position: absolute;
+        margin-top: 200px;
+        left: -70%;
+        z-index: 2;
+        background-color: var(--ColorSecundario);
+        border-radius: 0 0 20px 20px;
+        -webkit-box-shadow: 0px 10px 19px -9px rgba(0, 0, 0, 0.83);
+        -moz-box-shadow: 0px 10px 19px -9px rgba(0, 0, 0, 0.83);
+        box-shadow: 0px 10px 19px -9px rgba(0, 0, 0, 0.83);
     }
 
-    .row{
-       gap: 20px;
+    .collapsing {
+        display:none;
     }
-    .MasVistos{
+
+    .row {
+        gap: 20px;
+    }
+
+    .MasVistos {
         display: none;
     }
 
@@ -1246,7 +1295,7 @@ h3 {
         background: none;
     }
 
-    .ContenidoFooter{
+    .ContenidoFooter {
         margin-top: 0;
         display: flex;
         flex-direction: column;
@@ -1254,47 +1303,70 @@ h3 {
         gap: 20px;
         text-align: center;
     }
-    .LogoFooter img{
-        margin-right:0 !important;
-    }
-   footer p{
-    text-align: center;
-   }
-   .Sobrenosotros{
-    margin-top:40px;
-    margin-bottom: 40px;
-   }
-   .ParrafoSobreNosotros p {
-    font-size: 15px;
-   }
-   .ContenidoAutor{
-    display: flex; 
-    flex-direction: column;
-    text-align: justify;
-   }
-   .ContenidoAutor img{
-    margin-top: 40px;
-   }
-   .mainficha h3{
-    margin-bottom: 40px;
-   }
-   .pic-ctn>div{
-    margin-top: 0px;
-   }
-   .textoContenidoAutor h2{
-    margin-top: 20px;
-   }
-   .textoContenidoAutor p{
-    margin-top: 30px;
-   }
-   .pic-ctn{
-    padding-left:0;
-    display:flex;
-    justify-content:center;
-   }
-   .comentariosreseña{
-    margin-top: 25px;
-   }
 
-   
+    .LogoFooter img {
+        margin-right: 0 !important;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .Sobrenosotros {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ParrafoSobreNosotros p {
+        font-size: 15px;
+    }
+
+    .ContenidoAutor {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .ContenidoAutor img {
+        margin-top: 40px;
+    }
+
+    .mainficha h3 {
+        margin-bottom: 40px;
+    }
+
+    .pic-ctn>div {
+        margin-top: 0px;
+    }
+
+    .textoContenidoAutor h2 {
+        margin-top: 20px;
+    }
+
+    .textoContenidoAutor p {
+        margin-top: 30px;
+    }
+
+    .pic-ctn {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .comentariosreseña {
+        margin-top: 25px;
+    }
+    .FormContainer{
+        display:block;
+    }
+    .FormLibrosReview {
+        width: 100%;
+    }
+    .FormLibrosTitle{
+        width: 100%;
+    }
+    #drop-area{
+        width:100%;
+    }
+
 }
