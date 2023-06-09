@@ -44,13 +44,18 @@ const observer = new IntersectionObserver(entries => {
   
   observer.observe(document.querySelector('.SeccionLibroMes'));
 
-// Script para
-// Drag and drop del formulario para libros
+  //menu hamburguesa funcion para que se abra
+  document.getElementById("funcionCollapse").onclick = function() {
+    // Lógica de la función
+    console.log("funciona");
+    var element = document.getElementById("opciones");
+    if(element.classList.contains("show"))
+    {
+      element.classList.remove("show");
+    }
+    else{
+      element.classList.add("show");
+    }
+  };
 
-let dropArea = document.getElementById('drop-area')
-
-  dropArea.addEventListener('dragenter', handlerFunction, false)
-  dropArea.addEventListener('dragleave', handlerFunction, false)
-  dropArea.addEventListener('dragover', handlerFunction, false)
-  dropArea.addEventListener('drop', handlerFunction, false)
 
