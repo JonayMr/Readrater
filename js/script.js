@@ -27,7 +27,6 @@ mantenerCampana.forEach(function(item) {
   //menu hamburguesa funcion para que se abra
   document.getElementById("funcionCollapse").onclick = function() {
     // Lógica de la función
-    console.log("funciona");
     var element = document.getElementById("opciones");
     if(element.classList.contains("show"))
     {
