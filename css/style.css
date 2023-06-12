@@ -988,6 +988,7 @@ button {
 
 .ContenidoAutor img {
     height: 500px;
+    border-radius: 20px;
 }
 
 .textoContenidoAutor h2 {

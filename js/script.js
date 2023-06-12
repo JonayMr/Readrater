@@ -24,6 +24,19 @@ mantenerCampana.forEach(function(item) {
   }
 });
 
+  //menu hamburguesa funcion para que se abra
+  document.getElementById("funcionCollapse").onclick = function() {
+    // Lógica de la función
+    console.log("funciona");
+    var element = document.getElementById("opciones");
+    if(element.classList.contains("show"))
+    {
+      element.classList.remove("show");
+    }
+    else{
+      element.classList.add("show");
+    }
+  };
 
 
 //Animación para el texto de Libro Del Mes
@@ -44,18 +57,6 @@ const observer = new IntersectionObserver(entries => {
   
   observer.observe(document.querySelector('.SeccionLibroMes'));
 
-  //menu hamburguesa funcion para que se abra
-  document.getElementById("funcionCollapse").onclick = function() {
-    // Lógica de la función
-    console.log("funciona");
-    var element = document.getElementById("opciones");
-    if(element.classList.contains("show"))
-    {
-      element.classList.remove("show");
-    }
-    else{
-      element.classList.add("show");
-    }
-  };
+
 
 
