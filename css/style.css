@@ -1410,6 +1410,9 @@ h3 {
     #drop-area{
         width:100%;
     }
+    .TituloPrivacidad{
+        margin-top: 60px;
+    }
 
 }
 @media (max-width: 767px) and (min-width:576px) {
@@ -1421,4 +1424,8 @@ h3 {
     .BotonCampana::before{
         display: none;
     } 
+
+    .TituloPrivacidad{
+        margin-top: 60px;
+    }
 }
