@@ -5,6 +5,8 @@ Readrater ha sido creado e ideado por Ana, David y Jonay en conjunto como proyec
 Bienvenido/a a Readrater, la plataforma de reviews de libros en línea. 
 En Readrater, los usuarios pueden compartir sus opiniones sobre los libros que han leído y descubrir nuevas recomendaciones.
 
+https://readrater.netlify.app/
+
 ## Acerca de Readrater
 
 Readrater es un proyecto en desarrollo creado por Jonay, Ana y David. En este momento, la web se encuentra en su fase inicial y es un mockup que muestra la posible apariencia y funcionalidades de la plataforma. Utilizamos HTML, CSS y JS para su desarrollo, sin integración con una base de datos en esta etapa.
